@@ -3,11 +3,39 @@
 <head>
 <title>Page Title</title>
 <style>
-.Submit_button{
+.Submit_button , .Submit_button_save{
     background: #d3d740;
     color: #fff;
     border: none;
     border-radius: 10px;
+    height: 30px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.view_more{
+	text-align: center;
+}
+#shadow_box{
+	box-shadow: 6px 4px 8px 0px grey;
+	border-radius: 8px;
+}
+.data, h2{
+ margin: 10px;
+}
+img{
+	border-radius: 8px 8px 0 0;
+	width: 100%;
+	height: 100%;
+}
+@media only screen and (min-width: 400px){
+#shadow_box {
+    box-shadow: 6px 4px 8px 0px grey;
+    border-radius: 8px;
+    height: 151px;
+}
+.Submit_button_save{
+    margin-top: 300px;i
+}
 }
 </style>
 </head>
@@ -16,31 +44,37 @@
 
 <div style="display: flex;width: 100%;">
     <div style="padding: 20px;">
-        <div style="border: 2px solid black;">
-            <img src="https://assets.atdw-online.com.au/images/a11021df8ac18bcfc096922562e5b24f.jpeg?rect=222" style="width: 100%;height: 100%;" />
-            the HTML element. See the below example
+        <div id="shadow_box">
+            <img src="https://assets.atdw-online.com.au/images/a11021df8ac18bcfc096922562e5b24f.jpeg?rect=222" />
+            <h2>Dummy Data</h2>
+           <div  class="data"> Dummy data isn’t exactly dumb — on the contrary. Analysts that use dummy data are often the smart ones in the room, since dummy data is kind a safety mechanism for data integrity. It’s a trial subject of sorts, applied to unknown programs, or program modifications, before valuable data is used.</div>
+
+            <div class="view_more"><button class="Submit_button">Read More</button></div>
        </div>
     </div>
    
     <div style="padding: 20px;">
-        <div style="border: 2px solid black;">
-            <img src="https://assets.atdw-online.com.au/images/a11021df8ac18bcfc096922562e5b24f.jpeg?rect=222" style="width: 100%;height: 100%;" />
-            the HTML element. See the below example
+        <div id="shadow_box">
+            <img src="https://assets.atdw-online.com.au/images/a11021df8ac18bcfc096922562e5b24f.jpeg?rect=222" />
+            <h2>Dummy Data</h2>
+           <div  class="data"> Dummy data isn’t exactly dumb — on the contrary. Analysts that use dummy data are often the smart ones in the room, since dummy data is kind a safety mechanism for data integrity. It’s a trial subject of sorts, applied to unknown programs, or program modifications, before valuable data is used.</div>
+             <div class="view_more"><button class="Submit_button">Read More</button></div>
        </div>
     </div>
     
     <div style="padding: 20px;">
-        <div style="border: 2px solid black;">
-            <img src="https://assets.atdw-online.com.au/images/a11021df8ac18bcfc096922562e5b24f.jpeg?rect=222" style="width: 100%;height: 100%;" />
-            the HTML element. See the below example
+        <div id="shadow_box">
+            <img src="https://assets.atdw-online.com.au/images/a11021df8ac18bcfc096922562e5b24f.jpeg?rect=222" />
+            <h2>Dummy Data</h2>
+           <div  class="data"> Dummy data isn’t exactly dumb — on the contrary. Analysts that use dummy data are often the smart ones in the room, since dummy data is kind a safety mechanism for data integrity. It’s a trial subject of sorts, applied to unknown programs, or program modifications, before valuable data is used.</div>
+             <div class="view_more"><button class="Submit_button">Read More</button></div>
        </div>
     </div>
 </div>
-<div style="text-align: center;">
-    <button class="Submit_button">Submit</button>
+<div class="view_more">
+    <button class="Submit_button_save">View More</button>
 </div>
 
 </body>
 </html>
-
 
